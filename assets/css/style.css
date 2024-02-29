@@ -525,7 +525,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 0;
   font-family: "Poppins", sans-serif;
-  color: #646c55;
+  color: #5846f9;
 }
 
 .section-title p {
@@ -571,7 +571,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #565e49;
+  color: #5846f9;
   content: "/";
 }
 
@@ -601,7 +601,7 @@ section {
   line-height: 24px;
   display: block;
   font-weight: 700;
-  color: #646c55;
+  color: #5846f9;
   margin-left: 60px;
 }
 
@@ -611,21 +611,21 @@ section {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #646c55;
+  color: #5846f9;
 }
 
 .about .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #646c55;
+  color: #5846f9;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .about .count-box a:hover {
-  color: #8b9578;
+  color: #5846f9;
 }
 
 .about .content {
