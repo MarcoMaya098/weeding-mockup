@@ -21,9 +21,10 @@ a {
 }
 
 a:hover {
-  color: #aacd6b;
+  color: #5846f9;
   text-decoration: none;
 }
+
 
 h1,
 h2,
@@ -38,6 +39,19 @@ h6 {
   margin-top: 70px;
   z-index: 3;
   position: relative;
+}
+
+/* hr {
+  border-top: 10px solid #5846f9; 
+} */
+
+
+.hr-like {
+  width: 100%;
+  height: 3px; /* Grosor de la línea */
+  background-color: #5846f9; /* Color de la línea */
+  margin: 20px 0; /* Espaciado alrededor del div */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombras */
 }
 
 /*--------------------------------------------------------------
@@ -118,7 +132,7 @@ h6 {
 
 
 #about .countdown {
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 
 #about .countdown div {
@@ -405,9 +419,9 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 75vh;
-  background: url("../img/villam2.png") top center;
-  /* background-size: cover; */
+  height: 90vh;
+  background: url("../img/portadaResized.jpeg") top center;
+  background-size: cover;
   position: relative;
   margin-bottom: -140px;
   z-index: 1;
@@ -434,6 +448,11 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+
+    /* font-family: 'Monotype Corsiva', 'Apple Chancery', 'ITC Zapf Chancery', 'URW Chancery L', cursive; */
+    /* color: white; */
+    /* display: none;  */
+
 }
 
 #hero h1 {
@@ -477,7 +496,12 @@ h6 {
 
 @media (max-width: 768px) {
   #hero {
-    height: 100vh;
+    margin-top: 80px;
+    width: 100%;
+    height: 60vh; 
+    background: url("../img/portada.jpeg") top center;
+    background-size: cover; 
+    /* margin-bottom: 0; */
   }
 
   #hero h1 {
@@ -491,9 +515,9 @@ h6 {
     margin-bottom: 30px;
   }
 
-  #hero .hero-container {
+  /* #hero .hero-container {
     padding: 0 15px;
-  }
+  } */
 }
 
 @media (max-height: 500px) {
@@ -2183,7 +2207,7 @@ section {
   background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  color: #3fbbc0;
+  color: #5846f9;
   overflow: hidden;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
 }
@@ -2211,7 +2235,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #3fbbc0;
+  color: #5846f9;
 }
 
 .services .title::after {
@@ -2220,7 +2244,7 @@ section {
   display: block;
   width: 50px;
   height: 2px;
-  background: #3fbbc0;
+  background: #5846f9;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -2312,6 +2336,10 @@ section {
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
+.contact .info .nose {
+  margin-top: 25px;
+
+}
 
 .contact .info i {
   font-size: 20px;
@@ -2331,18 +2359,18 @@ section {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #7a6960;
 }
 
-.contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #ab9d95;
+.contact .info h5 {
+  padding: 0 0 0px 60px;
+  /* margin-bottom: 20px; */
+  font-size: 16px;
+  color: #303030;
 }
 
-.contact .info .email p {
+.contact .info .email h5 {
   padding-top: 5px;
 }
 

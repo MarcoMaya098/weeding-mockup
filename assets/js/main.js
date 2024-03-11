@@ -358,3 +358,60 @@
   });
 
 })()
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector('.php-email-form');
+
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+      const formData = new FormData(this); // Crea un objeto FormData para recopilar los datos del formulario
+
+      try {
+        const response = await fetch('http://localhost:5000/confirmation', {
+          method: 'POST',
+          body: formData // Envía los datos del formulario al servidor
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Respuesta del servidor:', data);
+          // Aquí podrías mostrar un mensaje de éxito o redireccionar al usuario a otra página
+        } else {
+          console.error('Error al enviar los datos al servidor:', response.status);
+          // Aquí podrías mostrar un mensaje de error al usuario
+        }
+      } catch (error) {
+        console.error('Error de red:', error);
+        // Aquí podrías mostrar un mensaje de error al usuario
+      }
+    });
+  });
+
+
+    var miAudio = document.getElementById('miAudio');
+    if (miAudio) {
+        // Configurar volumen medio (0.5)
+        miAudio.volume = 2.5;
+        // Reproducir el audio
+        miAudio.play();
+    }
+
+    // Función para alternar la clase fadeInOut cada 5 segundos
+    // function mostrarDiv() {
+    //   var divHero = document.querySelector('.hero-container');
+    //   divHero.style.display = 'block';
+    // }
+
+    // // Mostrar el div cada 5 segundos
+    // setInterval(mostrarDiv, 5000);
+    // setInterval(function() {
+    //   var divheroo = document.getElementById('divheroo');
+    //   if (divheroo.style.display === 'none') {
+    //     divheroo.style.display = 'block'; // Muestra el div si está oculto
+    //   } else {
+    //     divheroo.style.display = 'none'; // Oculta el div si está visible
+    //   }
+    // }, 5000); 
