@@ -40,10 +40,13 @@ h6 {
   z-index: 3;
   position: relative;
   /* margin: auto; */
-  padding: 8px;
+  padding-left: 20px;
   /* background-color: #b6a5a5; */
 
-  
+  background-image: url('../img/back20.jpg'); 
+  /* background-size: cover;  */
+  background-size: 105%, 100%;
+  background-position: center ;  
 
   /* background-size: cover;  */
   /* background-position: center top 190px;  */
@@ -557,10 +560,7 @@ section {
   padding-bottom: 60px;
   overflow: hidden;
 
-  background-image: url('../img/back14.jpg'); 
-  /* background-size: cover;  */
-  background-size: 100%, 100%;
-  background-position: center ;  
+ 
 }
 
 .section-bg {

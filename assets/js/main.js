@@ -358,13 +358,7 @@
   });
 
 
-  var miAudio = document.getElementById('miAudio');
-  if (miAudio) {
-      // Configurar volumen medio (0.5)
-      miAudio.volume = 0.25;
-      // Reproducir el audio
-      miAudio.play();
-  }
+
 
   const texto = document.getElementById('textoAnimado');
 
@@ -380,7 +374,10 @@
 
 })()
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  var miAudio = document.getElementById("miAudio");
+  miAudio.volume = 0.25; // Establecer volumen al 25%
+});
 
   // document.addEventListener("DOMContentLoaded", function() {
   //   const form = document.querySelector('.php-email-form');
