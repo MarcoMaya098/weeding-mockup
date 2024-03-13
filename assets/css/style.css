@@ -39,7 +39,31 @@ h6 {
   margin-top: 70px;
   z-index: 3;
   position: relative;
+  /* margin: auto; */
+  padding: 8px;
+  /* background-color: #b6a5a5; */
+
+  
+
+  /* background-size: cover;  */
+  /* background-position: center top 190px;  */
+  /* background-repeat: no-repeat;  */
 }
+
+
+
+/* @media (max-width: 768px) {
+ 
+  #main {
+    background-position: center top 10px; 
+  }
+} */
+
+/* @media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
+}  */
 
 /* hr {
   border-top: 10px solid #5846f9; 
@@ -532,10 +556,16 @@ h6 {
 section {
   padding-bottom: 60px;
   overflow: hidden;
+
+  background-image: url('../img/back14.jpg'); 
+  /* background-size: cover;  */
+  background-size: 100%, 100%;
+  background-position: center ;  
 }
 
 .section-bg {
   background-color: #f9fbf4;
+ 
 }
 
 .section-title {

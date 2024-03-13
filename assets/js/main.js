@@ -357,47 +357,61 @@
     }
   });
 
+
+  var miAudio = document.getElementById('miAudio');
+  if (miAudio) {
+      // Configurar volumen medio (0.5)
+      miAudio.volume = 0.25;
+      // Reproducir el audio
+      miAudio.play();
+  }
+
+  const texto = document.getElementById('textoAnimado');
+
+  // Define la animación utilizando Anime.js
+  anime({
+      targets: texto,
+      translateY: [-50, 0], // Mueve el texto de arriba hacia abajo
+      opacity: [0, 1], // Cambia la opacidad de 0 a 1
+      easing: 'easeInOutQuad', // Tipo de easing
+      duration: 3000, // Duración de la animación en milisegundos
+      delay: 500 // Retraso antes de que comience la animación en milisegundos
+  });
+
 })()
 
 
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('.php-email-form');
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   const form = document.querySelector('.php-email-form');
 
-    form.addEventListener('submit', async function(event) {
-      event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+  //   form.addEventListener('submit', async function(event) {
+  //     event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
 
-      const formData = new FormData(this); // Crea un objeto FormData para recopilar los datos del formulario
+  //     const formData = new FormData(this); // Crea un objeto FormData para recopilar los datos del formulario
 
-      try {
-        const response = await fetch('http://localhost:5000/confirmation', {
-          method: 'POST',
-          body: formData // Envía los datos del formulario al servidor
-        });
+  //     try {
+  //       const response = await fetch('http://localhost:5000/confirmation', {
+  //         method: 'POST',
+  //         body: formData // Envía los datos del formulario al servidor
+  //       });
 
-        if (response.ok) {
-          const data = await response.json();
-          console.log('Respuesta del servidor:', data);
-          // Aquí podrías mostrar un mensaje de éxito o redireccionar al usuario a otra página
-        } else {
-          console.error('Error al enviar los datos al servidor:', response.status);
-          // Aquí podrías mostrar un mensaje de error al usuario
-        }
-      } catch (error) {
-        console.error('Error de red:', error);
-        // Aquí podrías mostrar un mensaje de error al usuario
-      }
-    });
-  });
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         console.log('Respuesta del servidor:', data);
+  //         // Aquí podrías mostrar un mensaje de éxito o redireccionar al usuario a otra página
+  //       } else {
+  //         console.error('Error al enviar los datos al servidor:', response.status);
+  //         // Aquí podrías mostrar un mensaje de error al usuario
+  //       }
+  //     } catch (error) {
+  //       console.error('Error de red:', error);
+  //       // Aquí podrías mostrar un mensaje de error al usuario
+  //     }
+  //   });
+  // });
 
 
-    var miAudio = document.getElementById('miAudio');
-    if (miAudio) {
-        // Configurar volumen medio (0.5)
-        miAudio.volume = 2.5;
-        // Reproducir el audio
-        miAudio.play();
-    }
 
     // Función para alternar la clase fadeInOut cada 5 segundos
     // function mostrarDiv() {
