@@ -8,12 +8,12 @@ body {
 }
 
 a {
-  color: #996A07;
+  color: #997E3C;
   text-decoration: none;
 }
 
 a:hover {
-  color: #996A07;
+  color: #997E3C;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ h6 {
 .hr-like {
   width: 100%;
   height: 3px; /* Grosor de la línea */
-  background-color: #996A07; /* Color de la línea */
+  background-color: #997E3C; /* Color de la línea */
   margin: 20px 0; /* Espaciado alrededor del div */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombras */
 }
@@ -88,7 +88,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #996A07;
+  background: #997E3C;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -102,7 +102,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #996A07;
+  background: #997E3C;
   color: #fff;
 }
 
@@ -244,12 +244,12 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #996A07;
+  color: #997E3C;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #996A07;
+  background: #997E3C;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
@@ -259,7 +259,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #996A07;
+  background: #997E3C;
 }
 
 .navbar .dropdown ul {
@@ -294,7 +294,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #996A07;
+  color: #997E3C;
 }
 
 .navbar .dropdown:hover>ul {
@@ -393,7 +393,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #996A07;
+  color: #997E3C;
 }
 
 .navbar-mobile .getstarted,
@@ -428,7 +428,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #996A07;
+  color: #997E3C;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -501,7 +501,7 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin-bottom: 10px;
-  border: 2px solid #996A07;
+  border: 2px solid #997E3C;
   text-transform: uppercase;
   color: #fff;
 }
@@ -581,7 +581,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 0;
   font-family: "Poppins", sans-serif;
-  color: #996A07;
+  color: #997E3C;
 }
 
 .section-title p {
@@ -609,21 +609,21 @@ section {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #996A07;
+  color: #997E3C;
 }
 
 .about .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #996A07;
+  color: #997E3C;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .about .count-box a:hover {
-  color: #996A07;
+  color: #997E3C;
 }
 
 .about .content {
@@ -649,7 +649,7 @@ section {
 
 .about .content ul i {
   font-size: 24px;
-  color: #996A07;
+  color: #997E3C;
   position: absolute;
   left: 0;
   top: -2px;
@@ -710,7 +710,7 @@ section {
   background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  color: #996A07;
+  color: #997E3C;
   overflow: hidden;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
 }
@@ -738,7 +738,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #996A07;
+  color: #997E3C;
 }
 
 .services .title::after {
@@ -747,7 +747,7 @@ section {
   display: block;
   width: 50px;
   height: 2px;
-  background: #996A07;
+  background: #997E3C;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -785,7 +785,7 @@ section {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #996A07;
+  color: #997E3C;
   margin-bottom: 10px;
 }
 
@@ -832,8 +832,8 @@ section {
 # Contact Us
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #996A07;
-  border-bottom: 3px solid #996A07;
+  border-top: 3px solid #997E3C;
+  border-bottom: 3px solid #997E3C;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -846,7 +846,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #996A07;
+  color: #997E3C;
   float: left;
   width: 44px;
   height: 44px;
@@ -897,21 +897,21 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #996A07;
+  background: #997E3C;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #996A07;
+  background: #997E3C;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #996A07;
-  border-bottom: 3px solid #996A07;
+  border-top: 3px solid #997E3C;
+  border-bottom: 3px solid #997E3C;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -937,7 +937,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #996A07;
+  background: #997E3C;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -957,7 +957,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #996A07;
+  border: 3px solid #997E3C;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -978,7 +978,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #996A07;
+  background: #997E3C;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -987,7 +987,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #996A07;
+  background: #997E3C;
 }
 
 @keyframes animate-loading {
