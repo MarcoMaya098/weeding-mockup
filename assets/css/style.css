@@ -57,11 +57,10 @@ h6 {
   margin-top: 70px;
   z-index: 3;
   position: relative;
-  background-color: beige;
 
 
   content: "";
-  background-image: url('../img/selected5.png');
+  background-image: url('../img/selected7.png');
   background-size: contain; 
 
 }
