@@ -36,12 +36,11 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1 class="text-light"><a href="index.html" style="font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive; color: #996A07;" >NORMA & MARIO</a></h1>
+        <h1 class="text-light"><a href="index.html" style="font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive; color: #efb810;" >NORMA & MARIO</a></h1>
 
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a ><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -63,15 +62,14 @@
       </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <section id="hero">
     <div id="divheroo" class="hero-container" data-aos="fade-up">
-      <br>
       <h5 id="textoAnimado" style="font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive; color: white;">Sé parte del día más especial <br>en nuestras vidas </h5>
       <!-- <h4 style="font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive; color: white;">en nuestras vidas</h4> -->
+      <br>
       <a href="#inicio" style="font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;color: white;"  class="btn-get-started scrollto">Empezar</a>
-       <br />
     </div>
   </section>
 
@@ -206,43 +204,45 @@
 
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
-            <form role="form" class="php-email-form" >
-              <div class="section-title">
-                <h3>Reserva VIP</h3>
-                <em>Eres parte de la celebración.</em> <br>
-                <em>Los niños son divertidos, pero esta noche es <b>SOLO</b>  para ADULTOS.</em>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Nombre completo</label>
-                <input type="text" class="form-control" name="nameFull" id="subject" placeholder="" required>
-              </div>
-              <br>
-              <div id="resevip" class="row">
-                <div class="form-group col-md-6">
-                    <label for="name">¿Puedes asistir?</label>
+        <form role="form" class="php-email-form">
+          <div class="section-title">
+              <h3>Reserva VIP</h3>
+              <em>Eres parte de la celebración.</em><br>
+              <em>Los niños son divertidos, pero esta noche es <b>SOLO</b> para ADULTOS.</em>
+          </div>
+          <div class="form-group mt-3">
+              <label for="name">Nombre completo</label>
+              <input type="text" class="form-control" name="nameFull" id="nameFull" placeholder="" required>
+          </div>
+          <br>
+          <div id="resevip" class="row">
+              <div class="form-group col-md-6">
+                  <label for="name">¿Puedes asistir?</label>
                   <div class="form-check">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Si, ahí estarémos para celebrar 
-                  </label>
-                  <input type="radio" class="form-check-input" name="assistance" id="flexRadioDefault" value="Yes" required>
-                </div>
-                  <div class="form-check">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      No, brindaremos desde casa
-                    </label>
-                    <input type="radio" class="form-check-input" name="assistance" id="flexRadioDefault" value="No" required>
+                      <input type="radio" class="form-check-input" name="assistance" id="assistanceYes" value="Yes" required>
+                      <label class="form-check-label" for="assistanceYes">
+                          Si, ahí estaremos para celebrar
+                      </label>
                   </div>
-                </div>
-                <div class="form-group col-md-6 mt-3 mt-md-0">
-                <label for="name">Si tienes invitados adicionales en tu invitación, escribe el nombre de tus invitados. </label>
-                  <input type="text" class="form-control" name="nameFull" id="subject" placeholder="" required>
-                </div>
+                  <div class="form-check">
+                      <input type="radio" class="form-check-input" name="assistance" id="assistanceNo" value="No" required>
+                      <label class="form-check-label" for="assistanceNo">
+                          No, brindaremos desde casa
+                      </label>
+                  </div>
               </div>
-              <div class="my-3">
-                <div class="error-message"></div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Si tienes invitados adicionales en tu invitación, escribe el nombre de tus invitados.</label>
+                  <input type="text" class="form-control" name="companions" id="companions" placeholder="" required>
               </div>
-              <div class="text-center"><button type="submit" id="submitForm">Enviar</button></div>
-            </form>
+          </div>
+          <div class="my-3">
+              <div class="error-message"></div>
+          </div>
+          <div class="text-center">
+              <button type="button" id="submitForm">Enviar</button>
+          </div>
+      </form>
           </div>
       </div>
     </section>
@@ -283,7 +283,6 @@
 
   </main>
 
-  <!-- ======= Footer ======= -->
   <footer id="footer">
 
 
@@ -294,10 +293,8 @@
       </div>
     </div>
   </footer>
-  <!-- End Footer -->
 
 
-  <!-- Agrega este HTML para el modal -->
 <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -330,45 +327,45 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-
   <script>
-$(document).ready(function() {
-    $('#submitForm').on('click', function() {
-        var formData = {
-            nameFull: $('#subject').val(),
-            assistance: $('input[name="assistance"]:checked').val(),
-            companions: $('select[name="companions"]').val(),
-            companionsMount: $('select[name="companionsMount"]').val(),
-            message: $('textarea[name="message"]').val()
-        };
+      $(document).ready(function() {
+          $('#submitForm').click(function() {
+              // Obtener los valores del formulario
+              var nameFull = $('#nameFull').val();
+              var assistance = $('input[name="assistance"]:checked').val();
+              var companions = $('#companions').val();
 
-        $.ajax({
-            type: 'POST',
-            url: 'http://localhost:5000/confirmation',
-            data: formData,
-            dataType: 'json',
-            encode: true
-        })
-        .done(function(data) {
-            console.log(data); // Puedes manejar la respuesta del servidor aquí
-            // $('#successModal').modal('show'); 
-            Swal.fire({
-                icon: 'success',
-                title: 'Listo',
-                text: 'La confirmación se realizó con éxito.'
-            });
-            // Aquí puedes mostrar un mensaje de éxito o redirigir a otra página
-        })
-        .fail(function(data) {
-            console.error(data);
-             // Manejar errores si la solicitud falla
-            // Puedes mostrar un mensaje de error al usuario
-        });
+              // Crear el objeto JSON con los datos del formulario
+              var formData = {
+                  nameFull: nameFull,
+                  assistance: assistance,
+                  companions: companions
+              };
 
-    });
-});
+              // Enviar los datos al servidor
+              $.ajax({
+                  url: 'http://localhost:5000/confirmation',
+                  method: 'POST',
+                  contentType: 'application/json',
+                  data: JSON.stringify(formData),
+                  success: function(response) {
+                      console.log(response);
 
-</script>
+                      Swal.fire({
+                          icon: 'success',
+                          title: 'Listo',
+                          text: 'La confirmación se realizó con éxito.'
+                      });
+                  },
+                  error: function(xhr, status, error) {
+                      // Manejar errores
+                      console.error(xhr.responseText);
+                      alert('Ocurrió un error al enviar los datos');
+                  }
+              });
+          });
+      });
+  </script>
 
 </body>
 
