@@ -57,10 +57,10 @@ h6 {
   z-index: 3;
   position: relative;
 
-  background-color: #CBC7B7;
+  /* background-colobeige;F8F7F2; */
 
   content: "";
-  /* background-image: url('../img/selected7.png'); */
+  background-image: url('../img/selectet8.png');
   background-size: contain; 
 
 }
