@@ -372,12 +372,14 @@
       delay: 500 // Retraso antes de que comience la animación en milisegundos
   });
 
+  document.addEventListener("DOMContentLoaded", function() {
+    var miAudio = document.getElementById("miAudio");
+    miAudio.volume = 0.25; // Establecer volumen al 25%
+  });
+  
 })()
 
-document.addEventListener("DOMContentLoaded", function() {
-  var miAudio = document.getElementById("miAudio");
-  miAudio.volume = 0.25; // Establecer volumen al 25%
-});
+
 
   // document.addEventListener("DOMContentLoaded", function() {
   //   const form = document.querySelector('.php-email-form');
