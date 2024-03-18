@@ -60,7 +60,7 @@ h6 {
   /* background-colobeige;F8F7F2; */
 
   content: "";
-  background-image: url('../img/selectet8.png');
+  background-image: url('../img/selected10.png');
   background-size: contain; 
 
 }
@@ -157,6 +157,7 @@ h6 {
 
 #about .countdown {
   margin-bottom: 10px;
+  color: #997E3C;
 }
 
 #about .countdown div {
