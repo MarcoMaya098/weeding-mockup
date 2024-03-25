@@ -69,9 +69,17 @@ h6 {
 .icon img {
   width: 40px; 
   height: 40px; 
+  margin-left: 10px;
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+#textInicial {
+  font-family: 'Dancing Script', cursive;
+  color: #C8A04A;
+  font-size: 16px;
+}
 
 .hr-like {
   width: 100%;
@@ -132,20 +140,35 @@ h6 {
   transition: all 0.5s ease-in-out;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+#header .logo {
+  text-align: center;
+  
+
+  font-size: 28px;
+  /* margin: 0; */
+  /* line-height: 0; */
+  /* font-weight: 600; */
+  /* letter-spacing: 1px; */
 }
 
 #header .logo h1 {
+  
+
   font-size: 28px;
-  margin: 0;
-  line-height: 0;
-  font-weight: 600;
-  letter-spacing: 1px;
+  margin-left: 90px;
+  /* margin: 0; */
+  /* line-height: 0; */
+  /* font-weight: 600; */
+  /* letter-spacing: 1px; */
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
   color: #3c4133;
-  text-decoration: none;
 }
 
 #header .logo img {

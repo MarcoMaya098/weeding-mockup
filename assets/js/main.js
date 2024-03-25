@@ -288,21 +288,30 @@
    /**
    * Countdown timer
    */
-   let countdown = select('.countdown');
-   const output = countdown.innerHTML;
- 
-   const countDownDate = function() {
-     let timeleft = new Date(countdown.getAttribute('data-count')).getTime() - new Date().getTime();
- 
-     let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-     let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-     let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-     let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
- 
-     countdown.innerHTML = output.replace('%d', days).replace('%h', hours).replace('%m', minutes).replace('%s', seconds);
-   }
-   countDownDate();
-   setInterval(countDownDate, 1000);
+   const countDownDate = () => {
+    const countdown = select('.countdown');
+    const output = countdown.innerHTML;
+  
+    const targetDate = new Date(countdown.getAttribute('data-count')).getTime();
+    const currentDate = new Date().getTime();
+    const timeLeft = targetDate - currentDate;
+  
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  
+    countdown.innerHTML = output
+      .replace('%d', days)
+      .replace('%h', hours)
+      .replace('%m', minutes)
+      .replace('%s', seconds);
+  }
+  
+  countDownDate();
+  
+  setInterval(countDownDate, 1000);
+  
 
   /**
    * Initiate Pure Counter 
