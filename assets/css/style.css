@@ -146,20 +146,13 @@ h6 {
 
 #header .logo {
   text-align: center;
-  
-
   font-size: 28px;
-  /* margin: 0; */
-  /* line-height: 0; */
-  /* font-weight: 600; */
-  /* letter-spacing: 1px; */
+  margin-left: 20%;
+
 }
 
 #header .logo h1 {
-  
-
   font-size: 28px;
-  margin-left: 90px;
   /* margin: 0; */
   /* line-height: 0; */
   /* font-weight: 600; */
